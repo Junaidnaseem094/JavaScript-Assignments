@@ -220,6 +220,7 @@ document.write("Result is: ", result, "<br>");
 
 // Requirment 3
 
+
 document.write("<hr><h3>Requirement 3:</h3>")
 
 function greetings() {
@@ -280,12 +281,137 @@ var totalPercentage = totalObtainedMarks / G_total * 100;
 
 document.write("<tr><td> Grand Total|</td>" + "<td>" + G_total + "|</td>" + "<td>" + totalObtainedMarks + "|</td>" + "<td>" + totalPercentage + "%</td></tr><br>");
 
+// Chapter 9 - 11
+
+// Requirement 1
+
+document.write("<hr><h2>From Chapter 9 to 11</h2>")
+document.write("<h3>Requirement 1:</h3>")
+
+
+function welcome_Msg() {
+    var userCity = document.getElementById('cityName').value
+
+    if (userCity === "Karachi") {
+        document.getElementById('welcome_Message').innerHTML = "Welcome to city of lights";
+    } else {
+        document.getElementById('welcome_Message').innerHTML = "Enter correct city";
+    }
+}
+
+// Requirement 2
+
+document.write("<hr><h3>Requirement 2:</h3>")
+
+function gender_Msg() {
+    var userGender = document.getElementById('gender').value
+
+    if (userGender == "male") {
+        document.getElementById('gender_Message').innerHTML = "Good Morning Sir";
+    } else if (userGender == "female") {
+        document.getElementById('gender_Message').innerHTML = "Good Morning Ma'am";
+    } else {
+        document.getElementById('gender_Message').innerHTML = "Please enter you gender";
+    }
+}
+
+// Requirement 3
+
+document.write("<hr><h3>Requirement 3:</h3>")
+
+function color_Msg() {
+    var traffic_clr = document.getElementById('traffic_Color').value
+
+    if (traffic_clr == "red") {
+        document.getElementById('color_Message').innerHTML = "Must Stop";
+    } else if (traffic_clr == "yellow") {
+        document.getElementById('color_Message').innerHTML = "Ready to move";
+    } else if (traffic_clr == "green") {
+        document.getElementById('color_Message').innerHTML = "Move now";
+    } else {
+        document.getElementById('color_Message').innerHTML = "Provide input";
+    }
+}
+
+// Requirement 4
+
+document.write("<hr><h3>Requirement 4:</h3>")
+
+function fuel_warning() {
+    var fuel = document.getElementById('fuelQty').value
+
+    if (fuel < 0.25) {
+        document.getElementById('warning_Message').innerHTML = "Please refill the fuel in your car";
+    } else {
+        document.getElementById('warning_Message').innerHTML = "Good to go";
+    }
+}
+
+// Requirement 5
+
+document.write("<hr><h3>Requirement 5:</h3>")
+
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }
+// true
+
+// var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }
+// false
+
+// var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// }
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// }
+// condition 2 and 4 is true
+
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// }
+// true
+
+// if (true) {
+//     alert("True");
+// }
+// if (false) {
+//     alert("False");
+// }
+// both conditions true
+
+// if ("car" < "cat") {
+//     alert("car is smaller than cat");
+// }
+// true
 
 
 
 
+var total_mrk = 300;
+var obt_mrk = document.getElementById("get_marks");
+var obt_percentage = obt_mrk / total_mrk * 100;
 
+var a_one = (obt_percentage >= 80)
 
-
-
+document.write("<h2>Marks Sheet</h2>")
+document.write("Total Marks: " + total_mrk + "<br>");
+document.write("Marks Obtained: " + obt_mrk + "<br>");
+document.write("Percentage: " + obt_percentage + + "%<br>");
+document.write("Grade: " + total_mrk);
+document.write("Remarks: " + total_mrk);
 
