@@ -1,17 +1,15 @@
-document.write("<h1>JavaScript Assignment 2</h1>")
-document.write("<h2>Chapter 5</h2>")
 // Chapter 5
 
 // Requirement 1
+
 var num1 = 10;
 var num2 = 8;
 
-document.write("<hr><h3>Requirement 1:</h3>")
 var resultAdd = num1 + num2;
 document.write("Sum of " + num1 + " and " + num2 + " is " + resultAdd + ". <br>")
 
 // Requirement 2
-document.write("<hr><h3>Requirement 2:</h3>")
+
 var resultSub = num1 - num2;
 var resultMultiply = num1 * num2;
 var resultDivide = num1 / num2;
@@ -19,10 +17,10 @@ var resultModulus = num1 % num2;
 document.write("Subtraction of " + num1 + " and " + num2 + " is " + resultSub + ". <br>")
 document.write("Multiplication of " + num1 + " and " + num2 + " is " + resultMultiply + ". <br>")
 document.write("Division of " + num1 + " and " + num2 + " is " + resultDivide + ". <br>")
-document.write("Remainder of " + num1 + " and " + num2 + " is " + resultModulus + ". <br>")
+document.write("Remainder of " + num1 + " and " + num2 + " is " + resultModulus + ". <br><br><br>")
 
 // Requirement 3
-document.write("<hr><h3>Requirement 3:</h3>")
+
 var num3 = "Undefined"
 document.write("Value after variable declaration is: " + num3 + "<br>")
 num3 = 5;
@@ -34,36 +32,34 @@ document.write("Value after addition is: " + num4 + "<br>");
 num4--;
 document.write("Value after decrement is: " + num4 + "<br>");
 var num5 = num4 % 3;
-document.write("The Remainder is: " + num5 + "<br>");
+document.write("The Remainder is: " + num5 + "<br><br><br>");
 
 // Requirement 4
-document.write("<hr><h3>Requirement 4:</h3>")
+
 var ticketPrice = 600;
 var ticketQty = 5;
 var totalCost = ticketPrice * ticketQty;
 
-document.write("Total cost to buy " + ticketQty + " tickets to a movie is " + totalCost + " PKR.");
+document.write("Total cost to buy " + ticketQty + " tickets to a movie is " + totalCost + " PKR.<br><br>");
 
 // Requirement 5
-document.write("<hr><h3>Requirement 5:</h3>")
+
 var tableOf = 4;
 for (let i = 1; i <= 10; i++) {
     document.write(tableOf, " x ", i, " = ", tableOf * i, "<br>");
 }
-
+document.write("<br><br>")
 // Requirement 6
 
-document.write("<hr><h3>Requirement 6:</h3>")
 var tempC = 25;
 var fahrenheit = (tempC * (9 / 5)) + 32;
 document.write(tempC, "<sup>o</sup>C is ", fahrenheit, "<sup>o</sup>F.<br>");
 var tempf = 70;
 var celsius = (tempf - 32) * 5 / 9;
-document.write(tempf, "<sup>o</sup>F is ", celsius, "<sup>o</sup>C.<br>");
+document.write(tempf, "<sup>o</sup>F is ", celsius, "<sup>o</sup>C.<br><br><br>");
 
 //   Requirement 7
 
-document.write("<hr><h3>Requirement 7:</h3>")
 
 var priceItemA = 650;
 var priceItemB = 100;
@@ -86,11 +82,9 @@ document.write("Price of item B is: ", priceItemB, "<br>");
 document.write("ْQuantity of item B is: ", qtyItemB, "<br><br>");
 
 document.write("Shipping Charges: ", shippingCharges, "<br><br>");
-document.write("Total cost of your order is: ", totalOrderCost);
+document.write("Total cost of your order is: ", totalOrderCost+ ".<br><br>");
 
 //   Requirement 8
-
-document.write("<hr><h3>Requirement 8:</h3>")
 
 document.write("<h3>MarkSheet</h3>")
 
@@ -100,12 +94,10 @@ var obtainedPercentage = marksObtained / totalMarks * 100;
 
 document.write("Total Marks: ", totalMarks, "<br>");
 document.write("Marks Obtained: ", marksObtained, "<br>");
-document.write("Percentage: ", obtainedPercentage, "<br>");
+document.write("Percentage: ", obtainedPercentage, "<br><br><br>");
 
 
 //   Requirement 8
-
-document.write("<hr><h3>Requirement 9:</h3>")
 
 document.write("<h3>Currency in PKR</h3>");
 
@@ -119,20 +111,17 @@ var currConvTo_SAR = currSAR * currPak_SAR;
 
 var totalCurrency = currConvTo_USD + currConvTo_SAR;
 
-document.write("Total Currency in PKR is: ", totalCurrency, ".<br>")
+document.write("Total Currency in PKR is: ", totalCurrency, ".<br><br><br>")
 
 // Requirement 10
 
-document.write("<hr><h3>Requirement 10:</h3>")
 
 var initialNumber = 10;
 document.write("Initial Number is: ", initialNumber, ".<br>")
-document.write("After Calculating: ", initialNumber + 5 * 10 / 2, ". <br>")
+document.write("After Calculating: ", initialNumber + 5 * 10 / 2, ". <br><br><br>")
 
 
 // Requirement 11
-
-document.write("<hr><h3>Requirement 11:</h3>")
 
 document.write("<h3>Age Calculator</h3>")
 
@@ -142,12 +131,11 @@ var age = currentYear - birthYear;
 
 document.write("Current Year: ", currentYear, "<br>")
 document.write("Birth Year: ", birthYear, "<br>")
-document.write("Your Age is: ", age, "<br>")
+document.write("Your Age is: ", age, "<br><br><br>")
 
 
 // Requirement 12
 
-document.write("<hr><h3>Requirement 12:</h3>")
 document.write("<h3>The Geometrizer</h3><br>")
 
 var radius = 20;
@@ -157,12 +145,10 @@ var area = pie * (radius ** 2);
 
 document.write("Radius of a circle: ", radius, ". <br>");
 document.write("The Circumference is: ", circumference, ". <br>");
-document.write("The area is: ", area, ". <br>");
+document.write("The area is: ", area, ". <br><br><br>");
 
 
 // Requirement 13
-
-document.write("<hr><h3>Requirement 13:</h3>")
 
 document.write("<h3>The Lifetime Supply Calculator</h3>")
 
@@ -176,14 +162,11 @@ document.write("Favourite Snack: ", favSnack, "<br>");
 document.write("Current Age: ", CurrAge, "<br>");
 document.write("Estimated Maximum Age: ", maxAge, "<br>");
 document.write("Amount of Snacks per Day: ", snackPerDay, "<br>");
-document.write("You will need ", requiredSnack, " ", favSnack, " to last you until the ripe old age of ", maxAge, ". <br><hr>");
+document.write("You will need ", requiredSnack, " ", favSnack, " to last you until the ripe old age of ", maxAge, ". <br><br><br>");
 
 // Chapter 6 - 9
 
 // Requirement 1
-
-document.write("<h2>From Chapter 6 to 9</h2>")
-document.write("<h3>Requirement 1:</h3>")
 
 document.write("Result: <br>");
 var a = 10;
@@ -194,7 +177,7 @@ document.write("...................................................<br><br>")
 document.write("The value of ++a is: ", a, ". <br>")
 document.write("Now the value of a is: ", a, ". <br><br>")
 
-document.write("The value of ++a is: ", a, ". <br>")
+document.write("The value of a++ is: ", a, ". <br>")
 ++a
 document.write("Now the value of a is: ", a, ". <br><br>")
 
@@ -202,13 +185,11 @@ document.write("Now the value of a is: ", a, ". <br><br>")
 document.write("The value of --a is: ", a, ". <br>")
 document.write("Now the value of a is: ", a, ". <br><br>")
 
-a--
 document.write("The value of a-- is: ", a, ". <br>")
-document.write("Now the value of a is: ", a, ". <br>")
+a--
+document.write("Now the value of a is: ", a, ". <br><br><br>")
 
 // Requirment 2
-
-document.write("<hr><h3>Requirement 2:</h3>")
 
 var A = 2;
 var b = 1;
@@ -216,12 +197,9 @@ document.write("A is: ", A, "<br>");
 document.write("b is: ", b, "<br>");
 
 var result = --A - --b + ++b + b--;
-document.write("Result is: ", result, "<br>");
+document.write("Result is: ", result, "<br><br><br>");
 
 // Requirment 3
-
-
-document.write("<hr><h3>Requirement 3:</h3>")
 
 function greetings() {
     var userInput = document.getElementById('enterName').value;
@@ -229,10 +207,9 @@ function greetings() {
     var welcomeMessage = 'Hello! ' + userInput
     document.getElementById('showMessage').innerHTML = welcomeMessage;
 }
+document.write("<br><br>")
 
 // Requirment 4
-
-document.write("<hr><h3>Requirement 4:</h3>")
 
 function multiplicationTable() {
     var num = document.getElementById('enterNumber').value || 5;
@@ -244,10 +221,9 @@ function multiplicationTable() {
 
     document.getElementById("showTable").innerHTML = tableOutput;
 }
+document.write("<br><br>")
 
 // Requirment 5
-
-document.write("<hr><h3>Requirement 5:</h3>")
 
 // Declare Subjects
 var subject1 = prompt("Enter Subject Name")
@@ -280,14 +256,11 @@ var totalObtainedMarks = sub1Marks + sub2Marks + sub3Marks;
 var totalPercentage = totalObtainedMarks / G_total * 100;
 
 document.write("<tr><td> Grand Total|</td>" + "<td>" + G_total + "|</td>" + "<td>" + totalObtainedMarks + "|</td>" + "<td>" + totalPercentage + "%</td></tr><br>");
+document.write("<br><br>")
 
 // Chapter 9 - 11
 
 // Requirement 1
-
-document.write("<hr><h2>From Chapter 9 to 11</h2>")
-document.write("<h3>Requirement 1:</h3>")
-
 
 function welcome_Msg() {
     var userCity = document.getElementById('cityName').value
@@ -298,10 +271,9 @@ function welcome_Msg() {
         document.getElementById('welcome_Message').innerHTML = "Enter correct city";
     }
 }
+document.write("<br><br>")
 
 // Requirement 2
-
-document.write("<hr><h3>Requirement 2:</h3>")
 
 function gender_Msg() {
     var userGender = document.getElementById('gender').value
@@ -314,10 +286,9 @@ function gender_Msg() {
         document.getElementById('gender_Message').innerHTML = "Please enter you gender";
     }
 }
+document.write("<br><br>")
 
 // Requirement 3
-
-document.write("<hr><h3>Requirement 3:</h3>")
 
 function color_Msg() {
     var traffic_clr = document.getElementById('traffic_Color').value
@@ -332,10 +303,9 @@ function color_Msg() {
         document.getElementById('color_Message').innerHTML = "Provide input";
     }
 }
+document.write("<br><br>")
 
 // Requirement 4
-
-document.write("<hr><h3>Requirement 4:</h3>")
 
 function fuel_warning() {
     var fuel = document.getElementById('fuelQty').value
@@ -346,10 +316,9 @@ function fuel_warning() {
         document.getElementById('warning_Message').innerHTML = "Good to go";
     }
 }
+document.write("<br><br>")
 
 // Requirement 5
-
-document.write("<hr><h3>Requirement 5:</h3>")
 
 // var a = 4;
 // if (++a === 5){
@@ -399,8 +368,9 @@ document.write("<hr><h3>Requirement 5:</h3>")
 // }
 // true
 
+document.write("<br><br>")
 
-
+// Requirement 6
 
 var total_mrk = 300;
 var obt_mrk = document.getElementById("get_marks");
@@ -413,5 +383,56 @@ document.write("Total Marks: " + total_mrk + "<br>");
 document.write("Marks Obtained: " + obt_mrk + "<br>");
 document.write("Percentage: " + obt_percentage + + "%<br>");
 document.write("Grade: " + total_mrk);
-document.write("Remarks: " + total_mrk);
+document.write("Remarks: " + total_mrk+"<br><br>");
 
+//  Requirement 7
+
+var secretNum = 7;
+var guessNum = +prompt("Guess Number between 1 to 10");
+
+if (guessNum === secretNum){
+    document.write('“Bingo! Correct answer”.');
+} else if (guessNum == secretNum-1){
+    document.write('“Close enough to the correct answer”.');
+}  else {
+    document.write('Better Luck Next Time');
+}
+document.write("<br><br>")
+
+//  Requirement 8
+
+var divisibleNum = +prompt('Enter Number');
+
+if (divisibleNum % 3 == 0){
+    document.write("Number can be divisible by 3");
+} else {
+    document.write("Number cannot be divisible by 3");
+}
+document.write("<br><br>")
+
+//  Requirement 9
+
+var evenNumCheck = +prompt('Enter Number');
+
+if (evenNumCheck % 2 == 0){
+    document.write(evenNumCheck + " is an Even Number.");
+} else {
+    document.write(evenNumCheck + " is an Odd Number.");
+}
+
+document.write("<br><br>")
+
+//  Requirement 10
+
+var temp = prompt('Enter Temperature');
+
+if(temp > 40){
+    document.write("“It is too hot outside.”");
+} else if(temp > 30){
+    document.write("“The Weather today is Normal.”");
+} else if(temp > 20){
+    document.write("“Today’s Weather is cool.”");
+} else if (temp > 10){
+    document.write("“OMG! Today’s weather is so Cool.”");
+}
+document.write("<br><br>")
