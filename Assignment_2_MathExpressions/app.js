@@ -1,6 +1,8 @@
 // Chapter 5
 
 // Requirement 1
+document.write("<h3>Sum two numbers</h3>")
+
 
 var num1 = 10;
 var num2 = 8;
@@ -9,6 +11,8 @@ var resultAdd = num1 + num2;
 document.write("Sum of " + num1 + " and " + num2 + " is " + resultAdd + ". <br>")
 
 // Requirement 2
+document.write("<h3>Subtract, Multiply, Division and Modulus</h3>")
+
 
 var resultSub = num1 - num2;
 var resultMultiply = num1 * num2;
@@ -20,6 +24,8 @@ document.write("Division of " + num1 + " and " + num2 + " is " + resultDivide + 
 document.write("Remainder of " + num1 + " and " + num2 + " is " + resultModulus + ". <br><br><br>")
 
 // Requirement 3
+document.write("<h3>Pre and Post Increment and Decrement</h3>")
+
 
 var num3 = "Undefined"
 document.write("Value after variable declaration is: " + num3 + "<br>")
@@ -36,6 +42,9 @@ document.write("The Remainder is: " + num5 + "<br><br><br>");
 
 // Requirement 4
 
+document.write("<h3>Ticket Price Calculation</h3>")
+
+
 var ticketPrice = 600;
 var ticketQty = 5;
 var totalCost = ticketPrice * ticketQty;
@@ -44,12 +53,18 @@ document.write("Total cost to buy " + ticketQty + " tickets to a movie is " + to
 
 // Requirement 5
 
+document.write("<h3>Table of 4</h3>")
+
+
 var tableOf = 4;
 for (let i = 1; i <= 10; i++) {
     document.write(tableOf, " x ", i, " = ", tableOf * i, "<br>");
 }
 document.write("<br><br>")
 // Requirement 6
+
+document.write("<h3>Temperature Conversion</h3>")
+
 
 var tempC = 25;
 var fahrenheit = (tempC * (9 / 5)) + 32;
@@ -115,7 +130,6 @@ document.write("Total Currency in PKR is: ", totalCurrency, ".<br><br><br>")
 
 // Requirement 10
 
-
 var initialNumber = 10;
 document.write("Initial Number is: ", initialNumber, ".<br>")
 document.write("After Calculating: ", initialNumber + 5 * 10 / 2, ". <br><br><br>")
@@ -167,6 +181,7 @@ document.write("You will need ", requiredSnack, " ", favSnack, " to last you unt
 // Chapter 6 - 9
 
 // Requirement 1
+document.write("<h3>Pre and Post Increment and Decrement</h3>")
 
 document.write("Result: <br>");
 var a = 10;
@@ -190,6 +205,7 @@ a--
 document.write("Now the value of a is: ", a, ". <br><br><br>")
 
 // Requirment 2
+document.write("<h3>Pre and Post Increment and Decrement Calculation</h3>")
 
 var A = 2;
 var b = 1;
@@ -200,6 +216,8 @@ var result = --A - --b + ++b + b--;
 document.write("Result is: ", result, "<br><br><br>");
 
 // Requirment 3
+document.write("<h3>Greeting Message</h3>")
+
 
 function greetings() {
     var userInput = document.getElementById('enterName').value;
@@ -210,6 +228,9 @@ function greetings() {
 document.write("<br><br>")
 
 // Requirment 4
+
+document.write("<h3>Multiplication Table</h3>")
+
 
 function multiplicationTable() {
     var num = document.getElementById('enterNumber').value || 5;
@@ -225,18 +246,21 @@ document.write("<br><br>")
 
 // Requirment 5
 
+document.write("<h3>MarkSheet</h3>")
+
+
 // Declare Subjects
-var subject1 = prompt("Enter Subject Name")
-var subject2 = prompt("Enter Subject Name")
-var subject3 = prompt("Enter Subject Name")
+var subject1 = prompt("Enter Subject 1 Name")
+var subject2 = prompt("Enter Subject 2 Name")
+var subject3 = prompt("Enter Subject 3 Name")
 
 // Total Marks
 var totalMarks = 100;
 
 // Declare Obtained Marks
-var sub1Marks = +prompt("Enter Obtained Marks")
-var sub2Marks = +prompt("Enter Obtained Marks")
-var sub3Marks = +prompt("Enter Obtained Marks")
+var sub1Marks = +prompt("Enter Subject 1 Obtained Marks")
+var sub2Marks = +prompt("Enter Subject 2 Obtained Marks")
+var sub3Marks = +prompt("Enter Subject 3 Obtained Marks")
 
 
 
@@ -261,6 +285,8 @@ document.write("<br><br>")
 // Chapter 9 - 11
 
 // Requirement 1
+document.write("<h3>Greeting City</h3>")
+
 
 function welcome_Msg() {
     var userCity = document.getElementById('cityName').value
@@ -274,6 +300,8 @@ function welcome_Msg() {
 document.write("<br><br>")
 
 // Requirement 2
+document.write("<h3>Greeting Gender</h3>")
+
 
 function gender_Msg() {
     var userGender = document.getElementById('gender').value
@@ -289,6 +317,8 @@ function gender_Msg() {
 document.write("<br><br>")
 
 // Requirement 3
+document.write("<h3>Trafic Lights</h3>")
+
 
 function color_Msg() {
     var traffic_clr = document.getElementById('traffic_Color').value
@@ -306,6 +336,8 @@ function color_Msg() {
 document.write("<br><br>")
 
 // Requirement 4
+document.write("<h3>Fuel Warning</h3>")
+
 
 function fuel_warning() {
     var fuel = document.getElementById('fuelQty').value
@@ -372,20 +404,43 @@ document.write("<br><br>")
 
 // Requirement 6
 
-var total_mrk = 300;
-var obt_mrk = document.getElementById("get_marks");
-var obt_percentage = obt_mrk / total_mrk * 100;
 
-var a_one = (obt_percentage >= 80)
+var subject1 = +prompt("Enter marks for subject 1:");
+var subject2 = +prompt("Enter marks for subject 2:");
+var subject3 = +prompt("Enter marks for subject 3:");
 
-document.write("<h2>Marks Sheet</h2>")
-document.write("Total Marks: " + total_mrk + "<br>");
-document.write("Marks Obtained: " + obt_mrk + "<br>");
-document.write("Percentage: " + obt_percentage + + "%<br>");
-document.write("Grade: " + total_mrk);
-document.write("Remarks: " + total_mrk+"<br><br>");
+var totalMarks = prompt("Enter total marks:");
+
+var obtainedMarks = subject1 + subject2 + subject3;
+var percentage = (obtainedMarks / totalMarks) * 100;
+
+var grade;
+var remarks;
+
+if (percentage > 80) {
+    grade = "A-One";
+    remarks = "Excellent";
+} else if (percentage > 70) {
+    grade = "A";
+    remarks = "Good";
+} else if (percentage > 60) {
+    grade = "B";
+    remarks = "Need to improve";
+} else {
+    grade = "Fail";
+    remarks = "Sorry";
+}
+
+document.write("<h2>Result:</h2>");
+document.write("<p>Total Marks: " + totalMarks + "</p>");
+document.write("<p>Obtained Marks: " + obtainedMarks + "</p>");
+document.write("<p>Percentage: " + percentage + "%</p>");
+document.write("<p>Grade: " + grade + "</p>");
+document.write("<p>Remarks: " + remarks + "</p>");
 
 //  Requirement 7
+document.write("<h3>Guess Game</h3>")
+
 
 var secretNum = 7;
 var guessNum = +prompt("Guess Number between 1 to 10");
@@ -400,8 +455,10 @@ if (guessNum === secretNum){
 document.write("<br><br>")
 
 //  Requirement 8
+document.write("<h3>Number Divisible by 3</h3>")
 
-var divisibleNum = +prompt('Enter Number');
+
+var divisibleNum = +prompt('Enter Number to divisible of 3');
 
 if (divisibleNum % 3 == 0){
     document.write("Number can be divisible by 3");
@@ -411,8 +468,10 @@ if (divisibleNum % 3 == 0){
 document.write("<br><br>")
 
 //  Requirement 9
+document.write("<h3>Even and Odd number</h3>")
 
-var evenNumCheck = +prompt('Enter Number');
+
+var evenNumCheck = +prompt('Enter Number to check even and odd');
 
 if (evenNumCheck % 2 == 0){
     document.write(evenNumCheck + " is an Even Number.");
@@ -423,6 +482,8 @@ if (evenNumCheck % 2 == 0){
 document.write("<br><br>")
 
 //  Requirement 10
+document.write("<h3>Temperature Warning</h3>")
+
 
 var temp = prompt('Enter Temperature');
 
@@ -436,3 +497,29 @@ if(temp > 40){
     document.write("“OMG! Today’s weather is so Cool.”");
 }
 document.write("<br><br>")
+
+
+//  Requirement 11
+document.write("<h3>Calculator")
+
+
+var firstNumber = +prompt("Enter the first number:");
+var operation = prompt("Enter the operation (+, -, *, /, %):");
+var secondNumber = +prompt("Enter the second number:");
+var calc_result="";
+
+if (operation === "+") {
+    calc_result = firstNumber + secondNumber;
+} else if (operation === "-") {
+    calc_result = firstNumber - secondNumber;
+} else if (operation === "*") {
+    calc_result = firstNumber * secondNumber;
+} else if (operation === "/") {
+    calc_result = firstNumber / secondNumber;
+} else if (operation === "%") {
+    calc_result = firstNumber % secondNumber;
+} else {
+    document.write("Error: Invalid operation.");
+}
+
+document.write("Result: " + calc_result);
